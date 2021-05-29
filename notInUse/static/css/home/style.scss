@@ -1,0 +1,111 @@
+/* .material-icons.icon-md {
+	color: rgb(0, 0, 0);
+	padding: 10px;
+	font-size: 34px;
+}
+
+.menu-icons {
+	display: flex;
+	align-items: center;
+}
+
+.header-text {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.vertical-line {
+	border-left: 1px solid rgba(96, 96, 96, 0.5);
+	height: 40px;
+	padding: 3%;
+}
+
+.poke {
+	flex: 1 0 33%;
+	height: 100%;
+	width: 10px;
+	margin-right: 0px;
+	margin-bottom: 30px;
+}
+
+.title a,
+span {
+	display: flex;
+	text-decoration: none;
+	color: rgb(96, 96, 96);
+	font-size: 14px;
+	justify-content: center;
+}
+
+.list__container {
+	display: flex;
+	flex-wrap: wrap;
+} */
+
+/* Starting */
+
+
+html{
+	overflow-x: hidden;
+}
+
+.main--container{
+	margin-top: 100px;
+    width: 90vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 100px;
+
+	justify-content: center;
+}
+
+.poke{
+	min-width: 400px;
+	width: 26%;
+	margin-left: 2%;
+	margin-right: 2%;
+	
+	margin-top: 2.6%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 24px;
+	font-family: Helvetica Neue Roman;
+	transition: 0.5s;
+	cursor: pointer;
+	justify-content: space-around;
+	height: 600px;
+	border: 1px solid black;
+	border-radius: 1px;
+
+	background: rgba( 255, 255, 255, 0.01 );
+	backdrop-filter: blur( 8.5px );
+	-webkit-backdrop-filter: blur( 1px );
+	box-shadow: 0 8px 32px 0 rgba(152, 152, 152, 0.37);
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	border-radius: 10px;
+	z-index: 2;
+}
+
+
+.poke img{
+	position: relative;
+	min-width: 320px;
+	width: 20vw;
+}
+
+.poke__details__title{
+	text-align: center;
+}
+.poke:hover{
+	transform: scale(1.04);
+	transition: 0.5s;
+	margin-top: calc(2.6% - 26px);
+	font-weight: bold;
+	z-index: 4;
+}
+
+
