@@ -52,7 +52,7 @@ const controlPages = () => {
     if (scrollY >= fullHigh) {
         page += 1
 
-        genPokes(page)
+        // Infinity Scroll in Branch WithFeatures
     }
 }
 
@@ -82,7 +82,7 @@ const genPokes = () => {
 
     const Algorithm = ((windowWidth * 0.9) / 400) * (windowHeight / (640 + 120))
 
-    const url = `https://pokeapi.co/api/v2/pokemon?limit=${Math.round(Algorithm) * 2}&offset=${countPokes}`
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=${60}&offset=${countPokes}`
 
 
     fetch(url).then((res) => res.json()).then(
@@ -194,6 +194,7 @@ const renderPoke = async (id) => {
                         </span>
                         <div class="poke__details__stats__bar">
                             <div class="BarWidth" id="${index}"  style="background-color:${colours[type]}; width:${element.base_stat / 1.2}%">
+                                <span>${element.base_stat}</span>
                             </div>
                         </div>
                     </div>
