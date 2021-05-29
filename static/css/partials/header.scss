@@ -133,3 +133,22 @@
 	opacity: 0;
 	
 }
+
+@media screen and (max-width: 760px){
+	.menu__icon{
+		opacity: 1;
+		display: flex;
+		font-size: 50px;
+	}
+	.Main__options--container{
+		display: none;
+	}
+	.Profile__options--container{
+		display: none;
+	}
+
+	.Header__options--container{
+		width: 50px;
+	}
+}
+
