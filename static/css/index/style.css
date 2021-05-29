@@ -76,8 +76,8 @@ main {
 
 .poke {
   width: 360px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +113,7 @@ main {
   position: relative;
   min-width: 320px;
   width: 20vw;
+  max-width: 300px;
 }
 
 .poke__details__title {
@@ -159,8 +160,9 @@ main {
       justify-content: space-around;
 }
 
-.poke__display__slider {
-  width: 60%;
+.poke__display__image {
+  width: 20%;
+  min-width: 360px;
   height: 64%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +183,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.poke__display__slider__show {
+.poke__display__image__show {
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -194,7 +196,7 @@ main {
   overflow: hidden;
 }
 
-.poke__display__slider__show div {
+.poke__display__image__show div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,43 +208,18 @@ main {
           align-items: center;
 }
 
-.poke__display__slider__show img {
-  max-width: 240px;
+.poke__display__image__show img {
+  min-height: 200px;
   max-height: 24vh;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.poke__display__button {
-  position: relative;
-  z-index: 2;
-  width: 70px;
-  border: none;
-  font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 70px;
-  border-radius: 140px;
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0 0px 30px 0 rgba(159, 159, 159, 0.5);
-          box-shadow: 0 0px 30px 0 rgba(159, 159, 159, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.poke__display__slider button:first-child {
+.poke__display__image button:first-child {
   margin-right: -80px;
 }
 
-.poke__display__slider button:last-child {
+.poke__display__image button:last-child {
   margin-left: -80px;
 }
 
@@ -290,8 +267,8 @@ main {
 
 .poke__details__stats--container {
   width: 60%;
-  height: 64%;
   padding: 20px;
+  padding-top: 50px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(159, 159, 159, 0.37);
@@ -321,12 +298,12 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .poke__details__stats__bar--container span {
   font-family: Helvetica Neue Roman;
-  width: 80px;
+  width: 100px;
   font-size: 14px;
 }
 
@@ -359,10 +336,52 @@ main {
   color: red;
   font-size: 30px;
   border-radius: 140px;
-  -webkit-box-shadow: 0 0px 30px 0 rgba(159, 159, 159, 0.5);
-          box-shadow: 0 0px 30px 0 rgba(159, 159, 159, 0.5);
+  background-color: transparent;
+  -webkit-box-shadow: 0 0px 2px 0 rgba(159, 159, 159, 0.5);
+          box-shadow: 0 0px 2px 0 rgba(159, 159, 159, 0.5);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 3px solid rgba(255, 0, 0, 0.9);
+}
+
+.poke__type__container {
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  margin-top: -20px;
+  margin-bottom: -120px;
+}
+
+.poke__type {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 160px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  color: white;
+  -webkit-box-shadow: 0 0px 8px 0 rgba(159, 159, 159, 0.37);
+          box-shadow: 0 0px 8px 0 rgba(159, 159, 159, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 /*# sourceMappingURL=style.css.map */
