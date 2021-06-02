@@ -154,7 +154,8 @@ const imagesContainer = document.querySelector(".poke__display__image__show")
 
 
 const hexToRgb = (hex) => {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+//   Codigo da net rs, ultimo commit so pra colocar o const
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex); 
     return result ? {
         r: parseInt(result[1], 16),
         g: parseInt(result[2], 16),
